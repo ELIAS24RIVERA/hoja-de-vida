@@ -1,0 +1,80 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #222;
+    --primary-color: #007BFF;
+    --card-bg: #fff;
+  }
+  
+  body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #eee;
+    --primary-color: #66B2FF;
+    --card-bg: #2a2a2a;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .section {
+    background: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    .toggle-btn {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  }
+  
